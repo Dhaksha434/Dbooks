@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: #283593;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.form-section,
+.books-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #283593;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    background: #283593;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.cancel-btn {
+    background: #757575;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.book-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.book-card h3 {
+    color: #283593;
+    margin-bottom: 12px;
+}
+
+.book-card p {
+    margin-bottom: 10px;
+}
+
+.edit-btn {
+    background: #00897b;
+}
+
+.delete-btn {
+    background: #e53935;
+}
+
+.message {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.success {
+    display: block;
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
